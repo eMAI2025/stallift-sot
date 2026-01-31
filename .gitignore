@@ -1,0 +1,6 @@
+﻿# local artifacts
+Zaliczony test = brak wyjścia błędó*.txt
+*.zip
+
+# optional build script (nie wersjonujemy na tym etapie)
+build_stallift_1_7_5_package.sh
