@@ -1,0 +1,30 @@
+name: validate-sot
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  json5-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install json5 (tools/)
+        working-directory: tools
+        run: npm ci
+
+      - name: Validate JSON5 files
+        working-directory: tools
+        run: |
+          npx json5 -c ../manifest/stallift_operational_manifest_v1.7.5.json5 > /dev/null
+          npx json5 -c ../manifest/patches/stallift_operational_manifest_v1.7.6__additions.json5 > /dev/null
+          npx json5 -c ../registry/artifact-registry.json5 > /dev/null
+          npx json5 -c ../registry/task-registry.json5 > /dev/null
+          npx json5 -c ../registry/id-counters.json5 > /dev/null
