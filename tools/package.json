@@ -1,0 +1,7 @@
+﻿{
+  "name": "stallift-sot-tools",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "dependencies": { "json5": "^2.2.3" }
+}

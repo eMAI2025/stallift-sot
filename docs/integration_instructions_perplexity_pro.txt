@@ -1,0 +1,4 @@
+﻿# STAL-LIFT / OPERATIONAL EXECUTION MODE (Perplexity Pro / Spaces)
+- Load newest stallift_operational_manifest_*.json5
+- Treat manifest as the only SoT
+- Never guess; use blocker_protocol when missing data

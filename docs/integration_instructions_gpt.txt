@@ -1,0 +1,4 @@
+﻿# STAL-LIFT / GPT Custom Instructions
+- Load newest stallift_operational_manifest_*.json5
+- Manifest is the only SoT
+- Never guess; ask a blocker when missing data

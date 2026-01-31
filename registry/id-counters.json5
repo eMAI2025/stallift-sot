@@ -1,0 +1,9 @@
+﻿{
+  project: "StalLIFT",
+  document_type: "id_counters",
+  schema_version: "1.0.0",
+  updated_at: "2026-01-22",
+  years: {
+    "2026": { TASK:{last:0}, ART:{last:0}, DEC:{last:0}, WLOG:{last:0} }
+  }
+}
